@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss"
+  ],
+  "overrides": [
+    {
+      "files": ["client/src/App/**/**/*.scss"]
+    }
+  ]
+}

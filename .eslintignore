@@ -1,0 +1,7 @@
+# SCSS eslint ignore
+client/src/app/**/**/*.scss 
+
+# Media eslint ignore
+client/src/app/**/**/*.svg
+client/src/app/**/**/*.png
+client/src/app/**/**/*.jpg

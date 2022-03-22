@@ -1,0 +1,7 @@
+@mixin background-image($image, $x: 50%, $y: 50%) {
+  background: {
+    image: $image;
+    repeat: no-repeat;
+    position: $x $y;
+  }
+}

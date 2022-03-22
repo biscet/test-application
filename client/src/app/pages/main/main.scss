@@ -1,0 +1,17 @@
+@import "@styles/inheritance";
+
+.main {
+  @extend %display-flex;
+
+  .header {
+    @extend %display-flex;
+
+    width: 30%;
+    height: 25%;
+    flex-direction: column;
+
+    .select-country {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "react-app",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:biscet/test-application.git"
+  },
+  "author": "Egor Prokhorov",
+  "license": "MIT",
+  "scripts": {
+    "setup": "npm install && npm run setup:dependencies",
+    "setup:dependencies": "cd client/ && npm install && cd .. && cd server/ && npm install && cd ..",
+    "analyze": "cd client/ && npm run analyze && cd ..",
+    "prettify": "npx prettier --write client/",
+    "lint:stylelint": "npx stylelint ./client/src/App/**/**/*.scss --fix",
+    "lint:eslint": "npx eslint ./client/src/** --fix",
+    "lint": "npm run prettify && npm run lint:stylelint && npm run lint:eslint"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-lodash": "^7.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "^2.5.0",
+    "stylelint": "^14.1.0",
+    "stylelint-config-recommended": "^6.0.0",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-config-standard-scss": "^3.0.0"
+  },
+  "engines": {
+    "npm": ">=5",
+    "node": ">=8.15.1"
+  }
+}

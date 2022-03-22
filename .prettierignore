@@ -1,0 +1,8 @@
+# Client prettier ignore
+client/stats.json
+client/build/
+
+# Global prettier ignore
+node_modules/
+package-lock.json
+yarn.lock
